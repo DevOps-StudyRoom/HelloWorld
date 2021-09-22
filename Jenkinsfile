@@ -37,13 +37,13 @@
             steps {
                 step([$class: 'WsCleanup'])
                 git branch: "main",
-                    credentialsId: 'infra',
+                    credentialsId: 'Reines98',
                     url: 'git@github.com:DevOps-StudyRoom/Devops-infra.git'
             }
         }
         stage('CD Check') {
             steps {
-                sshagent(credentials : ['infra']) {
+                sshagent(credentials : ['Reines98']) {
                     sh '''#!/bin/bash
                         ls -al
                         cd helloworld
