@@ -8,8 +8,8 @@
     stages {
         stage('branch check') {
             steps {
-                git branch: "master",
-                    url: 'https://github.com/DevOps-StudyRoom/HelloWorld.git'
+                git branch: "main",
+                    url: 'https://github.com/DevOps-StudyRoom/helloworld.git'
             }
         }
         stage('gradle build') {
