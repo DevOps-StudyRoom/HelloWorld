@@ -33,11 +33,6 @@
                 }
             }
         }
-        stage('clean') {
-            steps {
-                step([$class: 'WsCleanup'])
-            }
-        }
         stage('infra Check') {
             steps {
                 step([$class: 'WsCleanup'])
