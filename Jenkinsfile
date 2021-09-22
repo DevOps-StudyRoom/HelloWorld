@@ -49,7 +49,6 @@
                         cd helloworld
                         BEFORE=$(cat helloworld.yml | grep 'devops/helloworld:' | sed -e 's/^ *//g' -e 's/ *$//g')
                         sed -i "s@$BEFORE@image: core.hanium-devops.site/devops/helloworld:${BUILD_NUMBER}@g" helloworld.yml
-
                         git config user.name Reines98
                         git config user.email test@test.com
                         git add .
