@@ -12,7 +12,7 @@ public class HelloworldApplication {
 
 	@RequestMapping("/")
 	String home() {
-		return "Hello World hanium-main";
+		return "Hello World hanium-main ";
 	}
 
     public static void main(String[] args) {
